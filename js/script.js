@@ -1,14 +1,17 @@
-const tripDistance = parseInt(prompt('Quanti km vuoi percorrere?'));
-console.log(tripDistance);
-const userAge = parseInt(prompt('Inserisci la tua età'));
-console.log(userAge);
-let ticketPrice = tripDistance * .26;
+const resultButton = document.getElementById('submit-result');
 
-if (userAge < 18) {
-   ticketPrice = ticketPrice * .85;
-} else if (userAge >= 65) {
-   ticketPrice = ticketPrice * .65;
-}
+resultButton.addEventListener('click', function(){
+   console.log(document.getElementById('distance-input').value);
+   console.log(document.getElementById('age-input').value);
+});
 
-const roundedPrice = ticketPrice.toFixed(2);
-console.log(roundedPrice);
+// let ticketPrice = tripDistance * .26;
+
+// if (userAge < 18) {
+//    ticketPrice = ticketPrice * .85;
+// } else if (userAge >= 65) {
+//    ticketPrice = ticketPrice * .65;
+// }
+
+// const roundedPrice = ticketPrice.toFixed(2);
+// console.log(roundedPrice);
