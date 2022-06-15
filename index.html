@@ -15,16 +15,32 @@
       <div class="container">
          <div class="row py-5">
             <div class="col">
-               <h1>Calcola il prezzo del tuo biglietto</h1>
-                  <div class="mb-3">
-                    <label for="InputText" class="form-label">Quanti km vuoi percorrere?</label>
-                    <input type="text" id="distance-input" class="form-control">
+               <div class="row py-3">
+                  <div class="col">
+                     <h1>Calcola il prezzo del tuo biglietto</h1>
                   </div>
-                  <div class="mb-3">
-                    <label for="InputText" class="form-label">Inserisci la tua età</label>
-                    <input type="text" id="age-input" class="form-control">
+               </div>
+               <div class="row py-3">
+                  <div class="col">
+                     <div class="mb-3">
+                     <label for="InputText" class="form-label">Quanti km vuoi percorrere?</label>
+                     <input type="text" id="distance-input" class="form-control">
+                     </div>
+                     <div class="mb-3">
+                     <label for="InputText" class="form-label">Inserisci la tua età</label>
+                     <input type="text" id="age-input" class="form-control">
+                     </div>
+                     <button type="submit" id="submit-result" class="btn btn-primary">Calcola</button>
                   </div>
-                  <button type="submit" id="submit-result" class="btn btn-primary">Calcola</button>
+               </div>
+               <div class="row py-3">
+                  <div class="col">
+                     <h3>Calcolo</h3>
+                     <pre>Il tuo percorso: <span id="trip-distance"></span></pre>
+                     <pre>La tua età: <span id="user-age"></span></pre>
+                     <pre>Totale: <span id="ticket-price"></span></pre>
+                  </div>
+               </div>   
             </div>
          </div>
       </div>
